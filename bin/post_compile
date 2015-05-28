@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "-----> Running django migrations"
+python beacon/manage.py migrate --noinput
