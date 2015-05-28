@@ -1,0 +1,24 @@
+vm:
+  hostname: dbserver
+  ip: 10.1.1.10
+  memory: 1024
+  cpus: 1
+  forwarded_ports:
+    postgresql:
+      guest: 5432
+      host: 5433
+
+postgresql:
+  root_pass: r00t
+  user: usr
+  pass: passwd
+  bind_address: 0.0.0.0
+  databases:
+    beacon:
+      sql_file: ''
+
+
+common_packages:
+  - nano
+  - bash
+  - htop
