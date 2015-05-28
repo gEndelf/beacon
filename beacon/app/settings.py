@@ -1,5 +1,6 @@
 import os
 import dj_database_url
+from app import get_env_var
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_PATH = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
@@ -19,6 +20,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'beacon'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -32,7 +34,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'beacon.urls'
+ROOT_URLCONF = 'app.urls'
 
 TEMPLATES = [
     {
@@ -50,7 +52,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'beacon.wsgi.application'
+WSGI_APPLICATION = 'app.wsgi.application'
 
 
 DATABASES = {
@@ -69,3 +71,6 @@ try:
     from settings_local import *
 except ImportError:
     pass
+
+GITHUB_USERNAME = get_env_var('GITHUB_USERNAME')
+GITHUB_PASSWORD = get_env_var('GITHUB_PASSWORD')

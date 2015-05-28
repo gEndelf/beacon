@@ -1,0 +1,7 @@
+{
+  "name": "Beacon",
+  "description": "trello and githib: sync & monitoring issues",
+  "repository": "https://github.com/gEndelf/beacon",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["trello", "github", "python"]
+}
