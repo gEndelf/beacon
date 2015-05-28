@@ -1,0 +1,56 @@
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+build
+eggs
+parts
+var
+sdist
+develop-eggs
+.installed.cfg
+lib64
+/venv
+
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+*.py[cod]
+py27env
+nbproject
+.idea
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.log
+
+# vagrant
+.vagrant
+vagrant/puppet/.librarian
+vagrant/puppet/.tmp
+vagrant/puppet/Puppetfile.lock
+
+# local settings
+settings_local.py
+.fabricrc
+
+# static files
+Thumbs.db
+node_modules
+bower_components
+media
