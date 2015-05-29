@@ -35,3 +35,12 @@ LABEL__ISSUE_PRIORITY = {
 
 LABELS = dict(dict(LABEL__ISSUE_TYPE, **LABEL__ISSUE_STATE),
               **LABEL__ISSUE_PRIORITY)
+
+BOARD_LISTS = (
+    'ideas',
+    'backlog',
+    'TODO',
+    'in progress',
+    'ready4testing',
+    'done',
+)
